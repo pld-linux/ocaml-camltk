@@ -57,7 +57,7 @@ tej biblioteki.
 
 %build
 cp %{_datadir}/automake/{config,install}* .
-autoconf
+%{__autoconf}
 sed -e 's/^CPPFLAGS/#&/' rpm.config > pld.config
 %configure --with-config=./pld.config
 %{__make} all opt
