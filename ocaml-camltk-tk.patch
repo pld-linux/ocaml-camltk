@@ -1,0 +1,22 @@
+--- camltk418/support/cltkImg.c.orig	Tue Dec 18 20:15:11 2001
++++ camltk418/support/cltkImg.c	Thu Oct 30 13:38:48 2003
+@@ -82,7 +82,7 @@
+   pib.offset[0] = 0;
+   pib.offset[1] = 1;
+   pib.offset[2] = 2;
+-  Tk_PhotoPutBlock(ph,&pib,Int_val(x),Int_val(y),Int_val(w),Int_val(h)); 
++  Tk_PhotoPutBlock_NoComposite(ph,&pib,Int_val(x),Int_val(y),Int_val(w),Int_val(h)); 
+ }
+ 
+ void camltk_setimgdata_bytecode(argv,argn)
+--- camltk418/tkanim/ext/tkAnimGIF.c.orig	Thu Dec 14 22:12:16 2000
++++ camltk418/tkanim/ext/tkAnimGIF.c	Thu Oct 30 13:47:32 2003
+@@ -317,7 +317,7 @@
+ 		goto error;
+ 	    }
+ 	}
+-	Tk_PhotoPutBlock(photoHandle, &block, 0, 0, 
++	Tk_PhotoPutBlock_NoComposite(photoHandle, &block, 0, 0, 
+ 			 imageWidth, imageHeight);
+ #ifdef TKANIM_DEBUG
+     fprintf(stderr, " Retrieving result\n");
