@@ -1,0 +1,14 @@
+--- camltk418/configure.in	Wed Feb 13 15:45:36 2002
++++ camltk418-/configure.in	Tue May 14 23:22:12 2002
+@@ -43,6 +43,11 @@
+ 
+ dnl builtin rule for Cygwin
+ AC_CYGWIN
++
++if test "$CYGWIN" = no; then
++ CYGWIN=
++fi
++
+ if test "$CYGWIN"; then
+  echo "CYGWIN=$CYGWIN"
+ fi
