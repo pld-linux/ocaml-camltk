@@ -1,0 +1,11 @@
+--- camltk418/lib/Makefile.orig	Mon Feb 25 14:30:45 2002
++++ camltk418/lib/Makefile	Thu Oct 30 13:45:57 2003
+@@ -33,7 +33,7 @@
+ 
+ ocamltktop$(EXE) : $(WIDGETOBJS) $(SUPPORT) ../support/libcamltk.a
+ 	$(CAMLC) -custom -linkall -o ocamltktop$(EXE) -I ../support \
+-	   $(TKLINKOPT) toplevellib.cma camltk.cma topmain.cmo
++	   $(TKLINKOPT) toplevellib.cma camltk.cma
+ 
+ # All .{ml,mli} files are generated in this directory
+ clean : 
