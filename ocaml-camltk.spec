@@ -100,8 +100,6 @@ EOF
 gzip -9nf $RPM_BUILD_ROOT%{_libdir}/ocaml/camltk/*.mli
 mv -f $RPM_BUILD_ROOT%{_libdir}/ocaml/camltk/*.mli.gz .
 
-gzip -9nf LICENSE README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -113,7 +111,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc *.gz
+%doc LICENSE README
 %{_libdir}/ocaml/camltk/*.cm[ixa]*
 %{_libdir}/ocaml/camltk/*.a
 %{_libdir}/ocaml/camltk/Makefile.camltk
