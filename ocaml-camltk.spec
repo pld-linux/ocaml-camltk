@@ -6,7 +6,7 @@ Version:	0.%{ver}
 Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	ftp://ftp.inria.fr/lang/caml-light/bazar-ocaml/ocamltk/ocamltk%{ver}.tar.gz
+Source0:	ftp://ftp.inria.fr/INRIA/Projects/cristal/caml-light/bazar-ocaml/ocamltk/ocamltk%{ver}.tar.gz
 Patch0:		%{name}-ac.patch
 BuildRequires:	tcl-devel
 BuildRequires:	tk-devel
