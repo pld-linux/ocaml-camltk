@@ -13,6 +13,7 @@ Patch1:		%{name}-tk.patch
 Patch2:		%{name}-notopmain.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	ncurses-devel
 BuildRequires:	ocaml >= 3.04-7
 BuildRequires:	tcl-devel
 BuildRequires:	tk-devel
