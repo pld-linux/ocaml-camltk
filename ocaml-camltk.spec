@@ -1,9 +1,10 @@
 %define		ver	418
+%define		ocaml_ver	3.09.1
 Summary:	Tk binding for OCaml
 Summary(pl):	Wi±zania Tk dla OCamla
 Name:		ocaml-camltk
 Version:	0.%{ver}
-Release:	5
+Release:	6
 License:	LGPL with additional linking exception
 Group:		Libraries
 Source0:	ftp://ftp.inria.fr/INRIA/Projects/cristal/caml-light/bazar-ocaml/ocamltk/ocamltk%{ver}.tar.gz
@@ -14,7 +15,7 @@ Patch2:		%{name}-notopmain.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ncurses-devel
-BuildRequires:	ocaml >= 3.04-7
+BuildRequires:	ocaml >= %{ocaml_ver}
 BuildRequires:	tcl-devel
 BuildRequires:	tk-devel
 %requires_eq	ocaml-runtime
@@ -68,7 +69,8 @@ sed -e 's/^CPPFLAGS/#&/' rpm.config > pld.config
 %configure \
 	--with-config=./pld.config
 
-%{__make} all opt
+%{__make} -j1 \
+	all opt
 
 cd support
 mkdir tmp
