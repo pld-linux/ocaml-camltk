@@ -1,5 +1,5 @@
 %define		ver	418
-%define		ocaml_ver	3.09.1
+%define		ocaml_ver	1:3.09.1
 Summary:	Tk binding for OCaml
 Summary(pl):	Wi±zania Tk dla OCamla
 Name:		ocaml-camltk
