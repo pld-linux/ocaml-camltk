@@ -4,7 +4,7 @@ Summary:	Tk binding for OCaml
 Summary(pl):	Wi±zania Tk dla OCamla
 Name:		ocaml-camltk
 Version:	0.%{ver}
-Release:	6
+Release:	8
 License:	LGPL with additional linking exception
 Group:		Libraries
 Source0:	ftp://ftp.inria.fr/INRIA/Projects/cristal/caml-light/bazar-ocaml/ocamltk/ocamltk%{ver}.tar.gz
