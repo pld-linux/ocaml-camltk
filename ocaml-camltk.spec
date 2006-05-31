@@ -1,10 +1,10 @@
 %define		ver	418
-%define		ocaml_ver	1:3.09.1
+%define		ocaml_ver	1:3.09.2
 Summary:	Tk binding for OCaml
 Summary(pl):	Wi±zania Tk dla OCamla
 Name:		ocaml-camltk
 Version:	0.%{ver}
-Release:	8
+Release:	9
 License:	LGPL with additional linking exception
 Group:		Libraries
 Source0:	ftp://ftp.inria.fr/INRIA/Projects/cristal/caml-light/bazar-ocaml/ocamltk/ocamltk%{ver}.tar.gz
