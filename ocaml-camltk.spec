@@ -1,7 +1,7 @@
 %define		ver	418
 %define		ocaml_ver	1:3.09.2
 Summary:	Tk binding for OCaml
-Summary(pl):	Wi眤ania Tk dla OCamla
+Summary(pl.UTF-8):   Wi膮zania Tk dla OCamla
 Name:		ocaml-camltk
 Version:	0.%{ver}
 Release:	9
@@ -28,16 +28,16 @@ Tcl/Tk.
 This package contains files needed to run bytecode executables using
 this library.
 
-%description -l pl
-Biblioteka pozwalaj眂a na 潮czenie program體 napisanych w OCamlu i
+%description -l pl.UTF-8
+Biblioteka pozwalaj膮ca na 艂膮czenie program贸w napisanych w OCamlu i
 Tcl/Tk.
 
-Pakiet ten zawiera binaria potrzebne do uruchamiania program體
-u縴waj眂ych tej biblioteki.
+Pakiet ten zawiera binaria potrzebne do uruchamiania program贸w
+u偶ywaj膮cych tej biblioteki.
 
 %package devel
 Summary:	Tk binding for OCaml - development part
-Summary(pl):	Wi眤afghjjtrfhuuiikkigde   aga   ogramistyczna
+Summary(pl.UTF-8):   Wi膮zafghjjtrfhuuiikkigde   aga   ogramistyczna
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 %requires_eq	ocaml
@@ -49,11 +49,11 @@ Tcl/Tk.
 This package contains files needed to develop OCaml programs using
 this library.
 
-%description devel -l pl
-Biblioteka pozwalaj眂a na 潮czenie program體 napisanych w OCamlu i
+%description devel -l pl.UTF-8
+Biblioteka pozwalaj膮ca na 艂膮czenie program贸w napisanych w OCamlu i
 Tcl/Tk.
 
-Pakiet ten zawiera pliki niezb阣ne do tworzenia program體 u縴waj眂ych
+Pakiet ten zawiera pliki niezb臋dne do tworzenia program贸w u偶ywaj膮cych
 tej biblioteki.
 
 %prep
