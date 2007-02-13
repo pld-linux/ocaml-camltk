@@ -1,7 +1,7 @@
 %define		ver	418
 %define		ocaml_ver	1:3.09.2
 Summary:	Tk binding for OCaml
-Summary(pl.UTF-8):   Wiązania Tk dla OCamla
+Summary(pl.UTF-8):	Wiązania Tk dla OCamla
 Name:		ocaml-camltk
 Version:	0.%{ver}
 Release:	9
@@ -37,7 +37,7 @@ używających tej biblioteki.
 
 %package devel
 Summary:	Tk binding for OCaml - development part
-Summary(pl.UTF-8):   Wiązafghjjtrfhuuiikkigde   aga   ogramistyczna
+Summary(pl.UTF-8):	Wiązafghjjtrfhuuiikkigde   aga   ogramistyczna
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 %requires_eq	ocaml
